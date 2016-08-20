@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { SpotifyComponent } from './spotify/spotify.component';
 import { routing } from './app.routing';
 
 @NgModule({
@@ -18,7 +18,7 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    SpotifyComponent
   ],
   providers: [
     
