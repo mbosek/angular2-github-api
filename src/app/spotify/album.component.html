@@ -1,0 +1,12 @@
+<div *ngIf="album">
+    {{album.name}}
+    <ul>
+        <li *ngFor="let track of album.tracks.items">
+            <h5>{{track.name}}</h5>
+            <audio controls>
+                <source src="{{track.preview_url}}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ul>
+</div>

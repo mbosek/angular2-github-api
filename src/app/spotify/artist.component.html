@@ -1,0 +1,17 @@
+<div *ngIf="artist">
+    {{artist.name}}
+    <div *ngIf="artist.images.length > 0">
+        <img src="{{artist.images[0].url}}" alt="{{artist.name}}">
+    </div>
+    <div *ngIf="artist.genres.length > 0">
+        <span *ngFor="let genre of artist.genres">{{genre}}</span>
+    </div>
+    <ul>
+        <li *ngFor="let album of albums">
+            <div *ngIf="album.images.length > 0">
+                <img src="{{album.images[0].url}}" alt="{{album.name}}" />
+                <a routerLink="/spotify/album/{{album.id}}">Album Details</a>
+            </div>
+        </li>
+    </ul>
+</div>

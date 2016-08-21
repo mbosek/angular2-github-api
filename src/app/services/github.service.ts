@@ -4,11 +4,11 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class GithubService {
+
     private username: string;
     private clientId = '8a8f57323a1ef172b6af';
     private clientSecret = '8872bfe27ee9a534134401fe401ae4eb107278d6';
     
-
     constructor(private http: Http) {
         this.username = 'mbosek';
     }

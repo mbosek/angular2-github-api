@@ -7,3 +7,20 @@
         <input type="text" name="searchStr" [(ngModel)]="searchStr" (keyup)="searchMusic()" placeholder="Search music">
     </div>
 </form>
+
+<div *ngIf="searchRes">
+    <div *ngFor="let res of searchRes">
+        <div class="col-lg-12">
+            <div class="well">
+                <h4>
+                    <a routerLink="/spotify/artist/{{ res.id }}">{{ res.name }}</a>
+                </h4>
+                <ul>
+                    <li *ngFor="let genre of res.genres">
+                        {{ genre.name }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
