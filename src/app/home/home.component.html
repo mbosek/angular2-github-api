@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <form>
             <div class="form-group">
-                <input class="form-control" type="text" placeholder="Enter A Github Username..." name="username" [(ngModel)]="username" (keyup)="searchUser()">
+                <input class="form-control" type="text" placeholder="Enter A Github username..." name="username" [(ngModel)]="username" (keyup)="searchuser()">
             </div>
         </form>
     </div>
@@ -28,7 +28,7 @@
                     </div>
                     <br>
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
+                        <li class="list-group-item"><strong>username: </strong>{{user.login}}</li>
                         <li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
                         <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
                         <li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li>

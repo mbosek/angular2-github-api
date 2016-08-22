@@ -10,17 +10,17 @@ import 'rxjs/add/operator/map';
 
 export class HomeComponent implements OnInit {
 
-    private user;
-    private repos;
-    username: string;
+    private user: Array<string>;
+    private repos: Array<string>;
+    private username: string;
 
     constructor(private githubService: GithubService) {
-      this.user = false;
+      this.user = null;
     }
 
   ngOnInit() {}
 
-  searchUser() {
+  searchuser() {
        this.githubService.updateUser(this.username);    
        this.githubService.getUser().subscribe(user => this.user = user);   
        this.githubService.getRepos().subscribe(repos => this.repos = repos);

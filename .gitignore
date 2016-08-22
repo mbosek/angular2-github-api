@@ -19,7 +19,7 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Users Environment Variables
+# users Environment Variables
 .lock-wscript
 
 # OS generated files #
