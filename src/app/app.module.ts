@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SpotifyComponent } from './spotify/spotify.component';
+import { GithubService } from './services/github.service';
+import { SpotifyService } from './services/spotify.service';
 import { routing } from './app.routing';
 
 @NgModule({
@@ -21,7 +23,8 @@ import { routing } from './app.routing';
     SpotifyComponent
   ],
   providers: [
-    
+    GithubService,
+    SpotifyService
   ],
   bootstrap: [AppComponent]
 })

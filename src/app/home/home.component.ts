@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { FORM_DIRECTIVES } from '@angular/forms'; 
+
 import {GithubService} from '../services/github.service';
+
 import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'my-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  directives: [FORM_DIRECTIVES],
+  providers: [GithubService]
 })
 
 export class HomeComponent implements OnInit {

@@ -11,6 +11,7 @@ describe('Spotify Component', () => {
     const fixture = TestBed.createComponent(SpotifyComponent);
     fixture.detectChanges();
     expect(fixture.nativeElement.children[0].textContent).toContain('Spotify Works!');
+    expect(true).toBe(true);
   });
 
 });

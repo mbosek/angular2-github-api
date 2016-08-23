@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
+import { FORM_DIRECTIVES } from '@angular/forms'; 
 import { SpotifyService } from '../services/spotify.service';
 import { Artist } from '../models/artist';
-import {ROUTER_DIRECTIVES} from '@angular/router';
 import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'my-spotify',
   templateUrl: './spotify.component.html',
   styleUrls: ['./spotify.component.scss'],
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES, FORM_DIRECTIVES]
 })
 
 export class SpotifyComponent implements OnInit {
